@@ -24,10 +24,6 @@ void tick()
 {
     for (int i = 0; i < 100; i++)
     {
-        // =========================
-        // X-LINIE
-        // =========================
-
         int y = top + random() % (height - 25);
         int move = (random() % 150) + 1;
 
@@ -65,16 +61,7 @@ void tick()
                 SRCCOPY
             );
         }
-
-
-        // =========================
-        // Y-LINIE
-        // =========================
-
         int x = left + random() % (width - 25);
-
-        // WICHTIG: kein "int" mehr,
-        // weil move oben schon existiert
         move = (random() % 150) + 1;
 
         if (random() & 1)
